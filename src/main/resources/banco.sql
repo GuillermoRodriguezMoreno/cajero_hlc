@@ -54,7 +54,8 @@ BEGIN
     UPDATE cuentas
     SET saldo_actual = saldo_actual + NEW.importe
     WHERE num_cuenta = NEW.num_cuenta;
-END //
+END;
+//
 
 DELIMITER ;
 
